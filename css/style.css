@@ -1,0 +1,196 @@
+:root{
+    scroll-behavior: auto;
+}
+body{
+    height: 200vh;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* start aside */
+aside{
+    position: fixed;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0px;
+    overflow: hidden;
+}
+aside .fa-xmark{
+    font-size: 25px;
+    margin-left: auto;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.2s;
+
+}
+aside .fa-xmark:hover{
+    color: rgba(214, 46, 51, 0.4);
+
+}
+aside a{
+    padding: 20px 0 20px 32px;
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    display: block;
+    transition: color 0.2s;
+}
+aside a:hover{
+    color: rgba(214, 46, 51, 0.4);
+}
+/* end aside */
+/* start home */
+.home {
+    background-image: linear-gradient(to right, rgba(214, 46, 51, 0.6) 0% 100%), url(../images/thumbnail.jpg);
+    height: 660px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;
+}
+
+.home .all {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.home .all h2 {
+    font-size: 60px;
+    text-align: center;
+}
+.home .all div{
+    left: 0;
+    top: 50%;
+    align-self: self-start;
+    cursor: pointer;
+}
+.home .all div i {
+    font-size: 30px;
+}
+
+.home .all div span {
+    font-size: 30px;
+}
+
+/* end home */
+/* start slide */
+#slide{
+    margin: 100px 0;
+}
+#slide .singers{
+    width: 50%;
+    margin: auto;
+}
+/* start slide */
+#slide .singers h3{
+    background-color: #e68285;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+#slide .singers p{
+background-color: #ccc;
+padding: 10px;
+margin: 0;
+}
+#slide .singers .singer2 p,
+#slide .singers .singer3 p,
+#slide .singers .singer4 p{
+    display: none;
+}
+/* end slide */
+/* start counter */
+#counter{
+    background-image: linear-gradient(to right, rgba(214, 46, 51, 0.6) 0% 100%), url(../images/invitation-2508607__340.jpg);
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+}
+#counter .container{
+    padding: 100px 0;
+}
+#counter .row .inner{
+    padding: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+/* end counter */
+/* start contact */
+#contact{
+    margin-top: 100px;
+    padding: 100px 0;
+    color: #777;
+}
+#contact  h2{
+    color: #444;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#contact .container >p{
+    font-weight: 200;
+}
+#contact .container .data > span{
+    display: block;
+    color: #444;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#contact .container .data .info .mail{
+    color: #D62E33;
+}
+#contact .container .data .info .mail i{
+    color: #777;
+}
+#contact .container .data .links{
+    gap: 20px;
+}
+#contact .container .data .links a {
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .container .data .links a:hover{
+    background-color: #d62e33;
+    border: 1px solid #d62e33;
+}
+#contact .container .data .links a:hover i{
+    color: white;
+}
+#contact .container form input,
+#contact .container form textarea{
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+#contact .container form p{
+    color: #212529;
+    font-size: 18px;
+}
+#contact .container form p span{
+    font-size: 20px;
+    color: #D62E33;
+}
+#contact .container form button{
+    background-color: #d62e33;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+}
+/* end contact */
